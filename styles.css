@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #94F08D;
+    align-items: center;
+}
+.icon{
+    display: none;
+}
+.listicon{
+    font-size: 30px;
+    color: black;
+}
+ul{
+    display: flex;
+    gap: 2rem;
+    cursor: pointer;
+    font-weight: 800;
+    list-style: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+.btn button{
+    padding: 10px 20px; 
+    border: none;   
+    border-radius: 5px;
+    background-color: rgb(17, 134, 202);
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn button:hover{
+    background-color: rgb(17, 97, 202);
+}
+.logo img{
+    cursor: pointer;
+}
+.h-image{
+    display: block;
+    background-image: url('https://images.squarespace-cdn.com/content/v1/5820b938d482e9a9a7034dea/1582221337117-K19F2VZ6YQWM7FYGPZR2/apple-park-header-image.jpg?format=1500w');
+    height: 80vh;
+    background-size: 100% 100%;
+    margin: 10px auto 100px;
+}
+.forms{
+    width: 70%;
+    display: flex;
+    margin: auto;
+    gap: 2rem;
+    font-family: sans-serif;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #8dc8f0;
+    padding: 0 10px 10px;
+    box-shadow: 0px 0px 5px 5px #E9EAEA;
+    border-radius: 10px;
+    
+}
+.m-image{
+    background-color: white;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    overflow: hidden;
+    padding: 10px;
+    margin-top: -70px;
+}
+img{
+    transition: all 1s;
+}
+.form:hover img{
+    scale: 1.4;
+
+}
+.form h2{
+    margin: 20px auto 10px;
+
+}
+.form p{
+    font-size: 17px;
+    text-align: justify;
+}
+.form button{
+    padding: 10px 20px;
+    background-color: rgb(207, 18, 18);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bolder;
+    margin: 10px auto;
+    font-size: 15px;
+}
+button{
+    transition: all 1s;
+}
+.form button:hover{
+    background-color: white;
+    cursor: pointer;
+    color: rgb(207, 18, 18);
+    
+}
+
+@media only screen and (max-width:1500px) {
+    .h-image{
+        height: 75vh;
+    }
+    .forms{
+        width: 75%;
+    }
+}
+@media only screen and (max-width:1350px) {
+    .h-image{
+        height: 70vh;
+    }
+}
+@media only screen and (max-width:1250px) {
+    .h-image{
+        height: 65vh;
+    }
+    .forms{
+        width: 85%;
+    }
+}
+@media only screen and (max-width:1150px) {
+    .h-image{
+        height: 60vh;
+    }
+    .forms{
+        width: 85%;
+    }
+}
+@media only screen and (max-width:1050px) {
+    .h-image{
+        height: 55vh;
+    }
+    .forms{
+        width: 85%;
+    }
+}
+@media only screen and (max-width:950px) {
+    .h-image{
+        height: 50vh;
+    }
+    .fomrs{
+        width: 90%;
+    }
+
+}
+@media only screen and (max-width:900px) {
+    .h-image{
+        height: 40vh;
+    }
+}
+@media only screen and (max-width:850px) {
+    .h-image{
+        height: 45vh;
+    }
+    .forms{
+        width: 95%;
+        height: 37vh;
+        gap: 1rem;
+    }
+}
+@media only screen and (max-width:850px) {
+    .h-image{
+        height: 35vh;
+    }
+}
+@media only screen and (max-width:750px) {
+    .h-image{
+        height: 30vh;
+    }
+    .forms{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+    .form{
+        margin-bottom: 70px;
+        padding: 15px 30px;
+
+    }
+}
+@media only screen and (max-width:600px) {
+    nav{
+        justify-content: space-around;
+    }
+    ul{
+        display: none;
+    }
+    .h-image{
+        height: 25vh;
+    }
+    .forms{
+        width: 60%;
+    }
+}
+@media only screen and (max-width:478px) {
+    nav{
+        width: 100%;
+        justify-content: space-around;
+    }
+    .h-image{
+        width: 100%;
+    }
+    ul{
+        display: none;
+    }
+    .forms{
+        width: 70%;
+    }
+}
+
+
+@media only screen and (max-width:390px) {
+    nav{
+        width: 100%;
+    }
+    ul{
+        display: none;
+    }
+    .btn{
+        display: none;
+    }
+    .icon{
+        display: flex;
+    }
+    .h-image{
+        height: 23vh;
+    }
+    .forms{
+        width: 80%;
+        display: block;
+        flex-direction: column;
+    }
+    .form{
+        margin-bottom: 100px;
+    }
+}
